@@ -1,4 +1,5 @@
 Mebay::Application.routes.draw do
+  map.connect '/ads/:id', :controller=>'ads', :action=>'show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
