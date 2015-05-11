@@ -1,6 +1,6 @@
 class AdsController < ApplicationController
 	def index
-		@ad = Ad.all
+		@ads = Ad.all
 	end
 
 	def show
