@@ -1,6 +1,9 @@
 Mebay::Application.routes.draw do
+  get '/ads/new', to: 'ads#new'
+  get '/ads/create', to: 'ads#create'
   get '/ads/', to: 'ads#index'
   get '/ads/:id', to: 'ads#show'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
