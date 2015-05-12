@@ -1,6 +1,6 @@
 Mebay::Application.routes.draw do
   get '/ads/new', to: 'ads#new'
-  get '/ads/create', to: 'ads#create'
+  post '/ads/create', to: 'ads#create'
   get '/ads/', to: 'ads#index'
   get '/ads/:id', to: 'ads#show'
 
