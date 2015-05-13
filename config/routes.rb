@@ -3,9 +3,9 @@ Mebay::Application.routes.draw do
   post '/ads/create', to: 'ads#create'
   get '/ads/', to: 'ads#index'
   get '/ads/:id', to: 'ads#show'
-  get '/ads/edit', to: 'ads#edit'
-  patch '/ads/update', to: 'ads#update'
-  
+  get '/ads/:id/edit', to: 'ads#edit'
+  patch '/ads/:id/update', to: 'ads#update'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
