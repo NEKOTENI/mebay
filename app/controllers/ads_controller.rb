@@ -28,6 +28,12 @@ class AdsController < ApplicationController
 		@ads = Ad.all
 	end
 
+	def destroy
+		@ad = Ad.find(params[:id])
+		@ad.destroy
+		redirect_to "/ads/"
+	end
+
 	private
 	def ad_params
 		params.require(:ad).permit(:name, :description, :price, :seller_id, :email, :img_url)
